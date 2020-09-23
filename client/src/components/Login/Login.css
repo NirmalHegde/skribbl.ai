@@ -1,0 +1,75 @@
+html, body {
+    font-family: 'Comic Sans MS', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .loginOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+    background-image: url("../images/background.png");
+  }
+  
+  .loginInnerContainer {
+    width: 20%;
+    height: 53%;
+    border: 25px solid #1A1A1D;
+    background-color: #1A1A1D;
+    border-radius: 10px;
+  }
+  
+  .loginInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 100%;
+    font-family: "Comic Sans MS", sans-serif;
+  }
+  
+  .loginHeading {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .button {
+      color: #fff !important;
+      font-family: "Comic Sans MS", sans-serif;
+      background: #2979FF;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+    .loginInnerContainer {
+      width: 90%;
+    }
+  
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }
