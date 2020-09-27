@@ -4,14 +4,14 @@ const socketio = require('socket.io');
 const http = require('http');
 
 //Port to send messages on
-const PORT = process.env.PORT;
+const PORT = 5000;
 
 const router = require('./router');
 
 //start socket.io server for FTP requests
 const app = express();
 const server = http.createServer(app);
-const io = socket.io(server);
+const io = socketio(server);
 
 //detects when new users connect and disconnect
 io.on('connection', (socket) => {
